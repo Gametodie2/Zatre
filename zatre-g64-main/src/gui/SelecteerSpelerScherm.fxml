@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1235.0" styleClass="bodybg" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="317.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="317.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="196.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="132.0" minHeight="0.0" prefHeight="57.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="128.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="32.800024414062506" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="84.0" minHeight="0.0" prefHeight="50.00001220703123" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="49.99998779296874" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="fxHomeBtn" mnemonicParsing="false" onAction="#fxHomeBtnOnAction" styleClass="homeBtn" stylesheets="@styles.css">
+         <graphic>
+            <ImageView fitHeight="86.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/house.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="fxTitel" contentDisplay="CENTER" prefHeight="140.0" prefWidth="342.0" stylesheets="@styles.css" text="Select Player" textFill="WHITE" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <styleClass>
+            <String fx:value="titleStyles" />
+            <String fx:value="textAlignCenter" />
+         </styleClass></Label>
+      <Label fx:id="fxUsername" prefHeight="30.0" prefWidth="500.0" stylesheets="@styles.css" text="Username:" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+      <TextField fx:id="fxUsernameSpScreen" maxWidth="305.0" prefHeight="35.0" prefWidth="305.0" styleClass="text-field" stylesheets="@styles.css" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+      <TextField fx:id="fxDateOfBirthSpScreen" prefHeight="35.0" prefWidth="300.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+      <Button fx:id="fxSelectpBtn" mnemonicParsing="false" onAction="#fxSelectpBtnOnAction" stylesheets="@styles.css" text="Select Player" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="TOP">
+         <styleClass>
+            <String fx:value="register" />
+            <String fx:value="btns2" />
+         </styleClass>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="fxYearOfBirth" prefHeight="30.0" prefWidth="500.0" stylesheets="@styles.css" text="Birthyear:" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+      <Label fx:id="fxAmountOfPlayersSelected" styleClass="subtitleStyles" stylesheets="@styles.css" text="Players selected: 0" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+      <Label styleClass="infoTextStyles" text="(min. : 2; max. : 4)" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+      <Button fx:id="fxCancelPlayerSelectionBtn" mnemonicParsing="false" onAction="#fxCancelPlayerSelectionBtnOnAction" prefHeight="42.0" prefWidth="129.0" stylesheets="@styles.css" text="Cancel" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="TOP">
+         <styleClass>
+            <String fx:value="register" />
+            <String fx:value="btns2" />
+         </styleClass>
+         <GridPane.margin>
+            <Insets right="40.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="fxStartBtn" mnemonicParsing="false" onAction="#faxStartBtnOnAction" styleClass="startBtn" stylesheets="@styles.css" text="START" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Start_Button_SDP.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</GridPane>
