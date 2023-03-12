@@ -1,3 +1,9 @@
 # Zatre
 
-- Victor Gevaert, Warre Vandenhoucke, Casper de Bock, Thomas Dewilde, Yani Degrande
+Groep 64:
+
+Casper De Bock
+Yani Degrande
+Thomas Dewilde
+Victor Gevaert
+Warre Vandenhoucke
